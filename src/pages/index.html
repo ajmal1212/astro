@@ -424,47 +424,94 @@
                         </div>
                         <div class="form-block w-form">
                             <h4>Sign up for free</h4>
-                            <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form" data-wf-page-id="68078a0d458eac21a376ad92" data-wf-element-id="6c2e5051-e8b0-866e-12d9-2b91c61eb251">
-                                <div class="split-fields">
-                                    <div>
-                                        <label for="name" class="field-label">Your name</label>
-                                        <input class="text-field w-input" maxlength="256" name="name" data-name="Name" placeholder="e.g. John Doe" type="text" id="name" required=""/>
-                                    </div>
-                                    <div>
-                                        <label for="email" class="field-label">Your mail</label>
-                                        <input class="text-field w-input" maxlength="256" name="email" data-name="Email" placeholder="e.g. hello@gmail.com" type="email" id="email" required=""/>
-                                    </div>
+                            <form
+                              action="https://formspree.io/f/xeogqnkp"
+                              method="POST"
+                              class="form"
+                            >
+                              <div class="split-fields">
+                                <div>
+                                  <label for="name" class="field-label">Your name</label>
+                                  <input
+                                    class="text-field w-input"
+                                    maxlength="256"
+                                    name="name"
+                                    placeholder="e.g. John Doe"
+                                    type="text"
+                                    id="name"
+                                    required
+                                  />
                                 </div>
-                                <div class="radio-button-wrapper">
-                                    <label for="name-2" class="field-label">Choose your ticket</label>
-                                    <label class="radio-button-field w-radio">
-                                        <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input"></div>
-                                        <input type="radio" name="Ticket" id="Basic" data-name="Ticket" style="opacity:0;position:absolute;z-index:-1" value="Basic"/>
-                                        <span class="radio-button-label w-form-label" for="Basic">Silver</span>
-                                    </label>
-                                    <label class="radio-button-field w-radio">
-                                        <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input"></div>
-                                        <input type="radio" name="Ticket" id="Premium" data-name="Ticket" style="opacity:0;position:absolute;z-index:-1" value="Premium"/>
-                                        <span class="radio-button-label w-form-label" for="Premium">Gold</span>
-                                        <div class="top-tag">top</div>
-                                    </label>
-                                    <label class="radio-button-field w-radio">
-                                        <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input"></div>
-                                        <input type="radio" name="Ticket" id="Special" data-name="Ticket" style="opacity:0;position:absolute;z-index:-1" value="Special"/>
-                                        <span class="radio-button-label w-form-label" for="Special">Platinum</span>
-                                    </label>
+                                <div>
+                                  <label for="email" class="field-label">Your mail</label>
+                                  <input
+                                    class="text-field w-input"
+                                    maxlength="256"
+                                    name="email"
+                                    placeholder="e.g. hello@gmail.com"
+                                    type="email"
+                                    id="email"
+                                    required
+                                  />
                                 </div>
-                                <input type="submit" data-wait="Please wait..." class="blue-button full-width w-button" value="Submit"/>
-                                <div class="tiny-text">We’ll contact you with the details after you sign up ✌️</div>
+                              </div>
+                          
+                              <div class="radio-button-wrapper">
+                                <label class="field-label">Choose your ticket</label>
+                          
+                                <label class="radio-button-field w-radio">
+                                  <input
+                                    type="radio"
+                                    name="ticket"
+                                    id="Basic"
+                                    value="Silver"
+                                    required
+                                    style="opacity:0;position:absolute;z-index:-1"
+                                  />
+                                  <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input"></div>
+                                  <span class="radio-button-label w-form-label" for="Basic">Silver</span>
+                                </label>
+                          
+                                <label class="radio-button-field w-radio">
+                                  <input
+                                    type="radio"
+                                    name="ticket"
+                                    id="Premium"
+                                    value="Gold"
+                                    required
+                                    style="opacity:0;position:absolute;z-index:-1"
+                                  />
+                                  <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input"></div>
+                                  <span class="radio-button-label w-form-label" for="Premium">Gold</span>
+                                  <div class="top-tag">top</div>
+                                </label>
+                          
+                                <label class="radio-button-field w-radio">
+                                  <input
+                                    type="radio"
+                                    name="ticket"
+                                    id="Special"
+                                    value="Platinum"
+                                    required
+                                    style="opacity:0;position:absolute;z-index:-1"
+                                  />
+                                  <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input"></div>
+                                  <span class="radio-button-label w-form-label" for="Special">Platinum</span>
+                                </label>
+                              </div>
+                          
+                              <input type="submit" class="blue-button full-width w-button" value="Submit" />
+                              <div class="tiny-text">We’ll contact you with the details after you sign up ✌️</div>
                             </form>
+                          
                             <div class="w-form-done">
-                                <div>Thank you! Your submission has been received!</div>
+                              <div>Thank you! Your submission has been received!</div>
                             </div>
                             <div class="w-form-fail">
-                                <div>Oops! Something went wrong while submitting the form.</div>
+                              <div>Oops! Something went wrong while submitting the form.</div>
                             </div>
+                          </div>                          
                         </div>
-                    </div>
                 </div>
             </section>
             <section class="footer">
